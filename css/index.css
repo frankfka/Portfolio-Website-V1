@@ -31,3 +31,14 @@ p {
 .header-social-item {
   display: inline-block;
 }
+
+/* temp */
+.container-fluid {
+  min-height: 80vh;
+}
+#content {
+  position: relative;
+}
+body {
+  position: relative;
+}

@@ -12,31 +12,64 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="js/index.js" type="module"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#nav-items" data-offset="0">
+
+  <nav id="nav-items" class="navbar navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="nav nav-pills justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#overview">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+    </ul>
+  </nav>
+
   <div id="header" class="container-fluid">
     <h1 id="header-name" class="display-1"><strong>Frank Jia</strong></h1> 
     <h2 class="text-muted">&nbsp;I am a <span id="animated-text-header" class="animated-text accent-text"></span><span class="cursor"></span></h2>
     <div id="header-social">
         <div class="header-social-item">
-          <img src="img/email.svg" class="header-social-icon align-center"/>
+          <a href="mailto:jiafrank98@gmail.com"><img src="img/email.svg" class="header-social-icon align-center"/></a>
           <p class="text-muted d-inline">jiafrank98@gmail.com</p>
         </div>
         <div class="header-social-item">
-          <img src="img/phone.svg" class="header-social-icon d-inline"/>
+          <a href="tel:1-778-384-9871"><img src="img/phone.svg" class="header-social-icon d-inline"/></a>
           <p class="text-muted d-inline">778-384-9871</p>
         </div>
         <div class="header-social-item">
-          <img src="img/linkedin.svg" class="header-social-icon d-inline"/>
+          <a href="https://www.linkedin.com/in/jiafrank/"><img src="img/linkedin.svg" class="header-social-icon d-inline"/></a>
           <p class="text-muted d-inline">jiafrank98</p>
         </div>
         <div class="header-social-item">
-          <img src="img/github.svg" class="header-social-icon d-inline"/>
+          <a href="https://github.com/frankfka/"><img src="img/github.svg" class="header-social-icon d-inline"/></a>
           <p class="text-muted d-inline">frankfka</p>
         </div>
     </div>
   </div>
 
+  <div id="overview" class="container-fluid">
 
+  </div>
+
+  <div id="experience" class="container-fluid">
+    
+  </div>
+
+  <div id="projects" class="container-fluid">
+
+  </div>
+
+  <div id="contact" class="container-fluid">
+
+  </div>
 
   <script
 			  src="https://code.jquery.com/jquery-3.3.1.min.js"
