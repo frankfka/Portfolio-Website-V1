@@ -1,0 +1,33 @@
+html {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+h1,h2 {
+  font-weight: 500;
+}
+h1 { 
+  font-size: 7em !important; 
+}
+h2 {
+  font-size: 2em;
+}
+p {
+  font-weight: 300;
+}
+.accent-text {
+  color: #f57c00;
+}
+#header {
+  background-color: white;
+  min-height: 80vh;
+  padding-top: 20vh;
+  padding-left: 10vw;
+}
+.header-social-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.header-social-item {
+  display: inline-block;
+}
