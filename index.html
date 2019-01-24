@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="js/index.js" type="module"></script>
 </head>
-<body data-spy="scroll" data-target="#nav-items" data-offset="0">
+<body data-spy="scroll" data-target="#nav-items" data-offset="50">
 
   <nav id="nav-items" class="navbar navbar-light bg-light fixed-top justify-content-end">
     <ul class="nav nav-pills">
@@ -52,46 +52,135 @@
           <p class="text-muted d-inline">frankfka</p>
         </div>
     </div>
-    <a class="btn" href="#contact">Let's Connect.</a>
+    <a class="btn" href="#contact-heading">Let's Connect.</a>
   </div>
 
+  <div id="overview-heading" class="section-heading"></div>
+
   <div id="overview" class="container-fluid">
-    <div class="row justify-content-center align-center">
-      <div class="col-6">
-        <h2>About Me</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. <br><br>
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.
-        </p>
-        <div class="row">
-            <div class="col">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-              </ul>
-            </div>
-            <div class="col">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Cras justo odio</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Morbi leo risus</li>
-                </ul>
-            </div>
+    <div class="container">
+      <div class="row justify-content-center align-center">
+          <div class="col-7">
+            <h2>About Me</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. <br><br>
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.
+            </p>
+            <div class="row">
+                <div class="col">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                  </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Morbi leo risus</li>
+                    </ul>
+                </div>
+              </div>
           </div>
-      </div>
-      <div class="col-4">
-        <img src="img/personal-image.png" id="personal-image" class="img-fluid">
+          <div class="col-5">
+            <img src="img/personal-image.png" id="personal-image" class="img-fluid">
+          </div>
+        </div>
       </div>
     </div>
   </div>
+    
+  <div id="experience-heading" class="section-heading"></div>
 
   <div id="experience" class="container-fluid">
+    <div class="container">
+        <h2>Experience</h2>
+        <div class="row">
+            <div class="nav flex-column nav-pills" id="experience-tabs" role="tablist" aria-orientation="vertical">
+              <a class="nav-link active" id="experience-tabs-grow-tab" data-toggle="pill" href="#experience-tabs-grow" role="tab" aria-controls="experience-tabs-grow" aria-selected="true">Grow</a>
+              <a class="nav-link" id="experience-tabs-workbench-tab" data-toggle="pill" href="#experience-tabs-workbench" role="tab" aria-controls="experience-tabs-workbench" aria-selected="false">3D Workbench</a>
+              <a class="nav-link" id="experience-tabs-shop-tab" data-toggle="pill" href="#experience-tabs-shop" role="tab" aria-controls="experience-tabs-shop" aria-selected="false">ShopandShout</a>
+              <a class="nav-link" id="experience-tabs-v2-tab" data-toggle="pill" href="#experience-tabs-v2" role="tab" aria-controls="experience-tabs-v2" aria-selected="false">V2 Games</a>
+            </div>
     
+            <div class="tab-content" id="experience-tabs-content">
+              <div class="tab-pane fade show active" id="experience-tabs-grow" role="tabpanel" aria-labelledby="experience-tabs-grow-tab">
+                <p>Grow</p>
+              </div>
+              <div class="tab-pane fade" id="experience-tabs-workbench" role="tabpanel" aria-labelledby="experience-tabs-workbench-tab">
+                <p>Grow</p>
+              </div>
+              <div class="tab-pane fade" id="experience-tabs-shop" role="tabpanel" aria-labelledby="experience-tabs-shop-tab">...</div>
+              <div class="tab-pane fade" id="experience-tabs-v2" role="tabpanel" aria-labelledby="experience-tabs-v2-tab">...</div>
+            </div>
+        </div>
+    </div>
   </div>
 
   <div id="projects" class="container-fluid">
+    <div class="container">
 
+      <h2>Projects</h2>
+
+      <div class="project-row row">
+          <div class="card col-4">
+            <h5 class="card-header">Featured</h5>
+            <img class="card-img-top" src="img/personal-image.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card col-4">
+              <h5 class="card-header">Featured</h5>
+              <img class="card-img-top" src="img/personal-image.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+          <div class="card col-4">
+            <h5 class="card-header">Featured</h5>
+            <img class="card-img-top" src="img/personal-image.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="project-row row">
+          <div class="card col-4">
+            <img class="card-img-top" src="img/personal-image.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card col-4">
+              <img class="card-img-top" src="img/personal-image.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+          <div class="card col-4">
+            <img class="card-img-top" src="img/personal-image.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      </div>
+        
+    </div>
   </div>
 
   <div id="contact" class="container-fluid">
