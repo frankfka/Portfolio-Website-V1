@@ -7,6 +7,7 @@
   <meta name="description" content="I'm an Engineering Physics student in Vancouver, Canada. I spend my time building mobile apps, researching equities, and working out. Let's connect!">
   <meta name="keywords" content="Frank Jia,frankfka,jiafrank,jiafrank98,Jia,vancouver,software,developer,mobile,ios,android,portfolio,github,linkedin">
   <meta name="author" content="Frank Jia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Dependencies -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
@@ -15,22 +16,30 @@
 </head>
 <body data-spy="scroll" data-target="#nav-items" data-offset="50">
 
-  <nav id="nav-items" class="navbar navbar-light bg-light fixed-top justify-content-end">
-    <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#overview">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-    </ul>
-  </nav>
+    <nav class="navbar navbar-expand-md fixed-top navbar-light" id="nav-items">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsed-navbar" aria-controls="collapsed-navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse justify-content-end" id="collapsed-navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-md-1">
+              <a class="nav-link" href="#overview">Overview</a>
+            </li>
+            <li class="nav-item mx-md-1">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item mx-md-1">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item mx-md-1">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a class="btn mx-md-3 my-2 my-md-0" href="#" id="resume-nav-button">Resume</a>
+        </div>
+      </nav>
 
   <div id="header" class="container-fluid">
     <h1 id="header-name" class="display-1"><strong>Frank Jia</strong></h1> 
