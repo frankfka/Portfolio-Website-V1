@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Frank Jia | UBC Engineering Physics Student</title>
-  <meta name="description" content="Portfolio site">
+  <meta name="description" content="I'm an Engineering Physics student in Vancouver, Canada. I spend my time building mobile apps, researching equities, and working out. Let's connect!">
+  <meta name="keywords" content="Frank Jia,frankfka,jiafrank,jiafrank98,Jia,vancouver,software,developer,mobile,ios,android,portfolio,github,linkedin">
   <meta name="author" content="Frank Jia">
   <!-- Dependencies -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -44,11 +45,11 @@
           <p class="text-muted d-inline">778-384-9871</p>
         </div>
         <div class="header-social-item">
-          <a href="https://www.linkedin.com/in/jiafrank/"><img src="img/linkedin.svg" class="header-social-icon d-inline"/></a>
+          <a href="https://www.linkedin.com/in/jiafrank/" target="_blank"><img src="img/linkedin.svg" class="header-social-icon d-inline"/></a>
           <p class="text-muted d-inline">jiafrank98</p>
         </div>
         <div class="header-social-item">
-          <a href="https://github.com/frankfka/"><img src="img/github.svg" class="header-social-icon d-inline"/></a>
+          <a href="https://github.com/frankfka/" target="_blank"><img src="img/github.svg" class="header-social-icon d-inline"/></a>
           <p class="text-muted d-inline">frankfka</p>
         </div>
     </div>
@@ -184,7 +185,24 @@
   </div>
 
   <div id="contact" class="container-fluid">
-
+    <div class="container">
+      <h2>Contact</h2>
+      <div id="contact-messages"></div>
+      <form method="POST" action="php/contact.php" role="form" id="contact-form">
+          <div class="form-group row">
+              <input required type="name" class="form-control" id="inputName" name="name" placeholder="Name">
+          </div>
+          <div class="form-group row">
+              <input required type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
+          </div>
+          <div class="form-group row">
+              <textarea class="form-control" id="inputComments" name="comments" rows="4" placeholder="Let's connect!" required></textarea>
+          </div>
+          <div class="form-group row justify-content-center">
+              <button type="submit" class="btn">Send</button>
+          </div>
+      </form>
+    </div>
   </div>
 
   <script
