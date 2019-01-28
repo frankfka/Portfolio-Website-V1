@@ -3,14 +3,12 @@ html {
   font-size: 18px;
   scroll-behavior: smooth;
 }
-h1,h2 {
-  font-weight: 500;
-}
 h1 { 
   font-size: 7em !important; 
 }
 h2 {
-  font-size: 2em;
+  font-size: 1.8em !important;
+  font-weight: 300 !important;
 }
 p {
   font-weight: 300;
@@ -18,19 +16,8 @@ p {
 .accent-text {
   color: #f57c00;
 }
-#header {
-  background-color: white;
-  min-height: 80vh;
-  padding-top: 20vh;
-  padding-left: 10vw;
-}
-.header-social-icon {
-  width: 18px;
-  height: 18px;
-  margin-right: 5px;
-}
-.header-social-item {
-  display: inline-block;
+.contrast-background {
+  background-color: #FAFAFA;
 }
 .btn {
   border: 1px solid #f57c00 !important;
@@ -43,6 +30,32 @@ p {
   background-color: #f57c00;
   color: white;
 }
+.container-fluid {
+  padding: 4em;
+}
+.container {
+  padding-left: 3em !important;
+  padding-right: 3em !important;
+}
+
+/* First section */
+#header {
+  padding-top: 6em;
+  padding-bottom: 4em;
+}
+#header-name {
+  margin-left: -5px;
+  line-height: 0.8;
+}
+.header-social-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.2rem;
+}
+.header-social-item {
+  display: inline-block;
+  margin-right: 1rem;
+}
 
 /* Navigation */
 .navbar {
@@ -51,11 +64,4 @@ p {
 }
 .active {
   color: #f57c00 !important;
-}
-
-/* temp */
-.container-fluid {
-  min-height: 80vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }

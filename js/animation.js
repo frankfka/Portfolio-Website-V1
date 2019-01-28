@@ -26,7 +26,7 @@ export class AnimatedText {
     
       var repeatFunction = this;
       // Time to wait between each character addition/subtraction
-      var timeToWait = 200 - Math.random() * 100;
+      var timeToWait = 130 - Math.random() * 100;
       if (this.isDeleting) { timeToWait /= 2; }
       if (!this.isDeleting && this.currentlyDisplayedText === fullWord) {
         timeToWait = this.period;
