@@ -132,12 +132,15 @@ p {
 }
 
 /* Second Section */
-
 #overview-header {
   margin: 0;
 }
 #personal-image {
   max-height: 80%;
+}
+.list-group-item {
+  background-color: transparent;
+  border: none;
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
