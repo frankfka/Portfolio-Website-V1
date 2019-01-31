@@ -28,7 +28,7 @@ a:hover {
 .centered {
   text-align: center;
 }
-.contrast-background {
+.contrast-background, footer {
   background-color: #FAFAFA;
 }
 .btn {
@@ -103,7 +103,7 @@ a:hover {
   border-bottom: 1px solid lightgray;
   background-color: white !important;
 }
-.active {
+.navbar .active {
   color: #f57c00 !important;
 }
 
@@ -162,19 +162,21 @@ a:hover {
 }
 
 /* Third Section */
-#experience-tabs-container {
+/* #experience-tabs-container {
   border: 1px grey solid;
   border-radius: .25rem;
-}
+} */
 #experience-tabs > .nav-link {
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   color: #212529;
 }
-#experience-tabs > .active {
+#experience-tabs > .nav-link.active {
   color: white !important;
   background-color: #f57c00;
 }
 #experience-tabs {
-  border-right: grey 1px solid;
-  border-radius: .25rem;
+  border-bottom: #f57c00 1px solid;
+}
+.tab-content {
+  padding-top: 1em;
 }
