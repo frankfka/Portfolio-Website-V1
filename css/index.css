@@ -7,14 +7,23 @@ h1 {
   font-size: 4em !important; 
 }
 h2 {
-  font-weight: 300 !important;
   font-size: 1.4em !important;
 }
-p {
-  font-weight: 300;
+p, h2, a {
+  font-weight: 200 !important;
+}
+a {
+  color: #f57c00;
+}
+a:hover {
+  text-decoration: none;
+  color: #FF9800;
 }
 .accent-text {
   color: #f57c00;
+}
+.bolded-text {
+  font-weight: 500 !important;
 }
 .centered {
   text-align: center;
@@ -150,4 +159,22 @@ p {
   #personal-image {
     max-height: 100%;
   }
+}
+
+/* Third Section */
+#experience-tabs-container {
+  border: 1px grey solid;
+  border-radius: .25rem;
+}
+#experience-tabs > .nav-link {
+  font-weight: 300 !important;
+  color: #212529;
+}
+#experience-tabs > .active {
+  color: white !important;
+  background-color: #f57c00;
+}
+#experience-tabs {
+  border-right: grey 1px solid;
+  border-radius: .25rem;
 }
