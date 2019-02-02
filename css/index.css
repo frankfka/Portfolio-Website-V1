@@ -9,7 +9,7 @@ h1 {
 h2 {
   font-size: 1.4em !important;
 }
-p, h2, h5, a {
+p, h2, h5, a, .thin-text {
   font-weight: 200 !important;
 }
 a {
