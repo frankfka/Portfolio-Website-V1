@@ -93,7 +93,7 @@ a:hover {
   h2 {
     font-size: 2em !important;
   }
-  p, .btn, .nav-item a {
+  .btn, .nav-item a {
     font-size: 1.2em;
   }
 }
@@ -189,4 +189,13 @@ a:hover {
 .card-header {
   background-color: #f57c00;
   color: white;
+}
+.card-link-row {
+  margin-top: 1em;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .project-row {
+    margin: auto 3em;
+  }
 }
