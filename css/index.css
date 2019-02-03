@@ -145,19 +145,21 @@ a:hover {
   margin: 0;
 }
 #personal-image {
-  max-height: 80%;
+  max-width: 60%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .list-group-item {
   background-color: transparent;
   border: none;
 }
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #personal-image {
+    max-width: 100%;
+  }
   #overview-header {
     margin-bottom: 1em;
-  }
-  #personal-image {
-    max-height: 100%;
   }
 }
 
@@ -182,8 +184,7 @@ a:hover {
   margin: 1em;
 }
 .card-img-top {
-  padding: 1em;
-  margin: auto;
+  margin: 1em auto 0.5em;
   width: 60%;
 }
 .card-header {
