@@ -10,7 +10,8 @@ h2 {
   font-size: 1.4em !important;
 }
 p, h2, h5, a, .thin-text {
-  font-weight: 200 !important;
+  font-weight: 300 !important;
+  font-size: 1.1em !important;
 }
 a {
   color: #f57c00;
@@ -72,6 +73,10 @@ a:hover {
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  body {
+    font-weight: 300 !important;
+    font-size: 1.1em !important;
+  }
   .container-fluid {
     padding: 4em;
   }
