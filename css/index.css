@@ -187,6 +187,10 @@ a:hover {
 /* Fourth Section */
 .card {
   margin: 1em;
+  width: 50%;
+}
+.card p a {
+  font-size: 1em !important;
 }
 .card-img-top {
   margin: 1em auto 0.5em;
@@ -203,5 +207,9 @@ a:hover {
 @media (min-width: 992px) {
   .project-row {
     margin: auto 3em;
+  }
+  .card-img-top {
+    margin: 2em auto;
+    max-width: 200px;
   }
 }

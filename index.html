@@ -21,8 +21,13 @@
   </script>
 
   <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Dependencies -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -89,7 +94,7 @@
         
           <div class="col-lg-6 col-12 order-2 order-lg-1">
             <p>
-                <p class="accent-text d-inline">Hello!</p> I'm Frank Jia, a mobile app developer, problem solver, and fitness enthusiast. <br><br>
+                <span class="accent-text d-inline">Hello!</span> I'm Frank Jia, a mobile app developer, problem solver, and fitness enthusiast. <br><br>
                 I am currently a 3rd year <a href="http://www.engphys.ubc.ca/" target="_blank">Engineering Physics</a> student at UBC, which is a blend of Software Engineering & Mechatronics. Outside of my core studies, I am planning to pursue a minor in Business. I believe that my technical expertise, paired with a business intuition, will allow me to create meaningful value in whatever I do. <br><br>
                 Although I keep myself busy with school, I exercise on a daily basis and am committed to maintaining my health with whole foods. I am extremely interested in creating software that provides value, and have been dedicating my free time to learning new technologies and developing my existing skills.<br><br>
                 My core competencies are:
@@ -193,10 +198,11 @@
     </div>
   </div>
 
+  <!-- PROJECTS SECTION -->
   <div id="projects" class="container-fluid contrast-background">
     <div class="container">
-
       <h2 class="centered section-header">Current Projects</h2>
+      <!-- FIRST PROJECTS ROW -->
       <div class="project-row d-flex flex-column flex-md-row">
 
           <div class="card">
@@ -235,26 +241,44 @@
               </div>
           </div>
       </div>
-<!-- 
-      <div class="project-row flex-column flex-md-row d-flex">
-          <div class="card">
-            <img class="card-img-top" src="img/personal-image.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+      <!-- SECOND ROW -->
+      <div class="project-row d-flex flex-column flex-md-row">
+
+        <div class="card">
+          <img class="card-img-top img-fluid" src="img/cryptodash-logo.png" alt="Card image cap">
+          <div class="card-body">
+            <h3 class="card-title">CryptoDash</h3>
+            <p class="card-text">A ReactJS + Python Webapp to Monitor Cryptocurrencies</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">See top movers and the latest news</p></li>
+              <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Keep track of your portfolio balances</p></li>
+              <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">ReactJS frontend with Heroku-hosted Python Flask backend</p></li>
+            </ul>
+            <div class="flex-row card-link-row">
+              <a href="https://github.com/frankfka/CryptoDashboard" target="_blank" class="btn">Github</a>
+              <a href="https://frankfka.github.io/CryptoDashboard" target="_blank" class="btn">App</a>
             </div>
           </div>
-          <div class="card">
-              <img class="card-img-top" src="img/personal-image.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top img-fluid" src="img/mimic-logo.png" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title">Mimic</h3>
+              <p class="card-text">Machine learning for text generation, created with <a href="https://www.ubclaunchpad.com/" target="_blank">UBC Launchpad</a></p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Generate output text similar to input dataset</p></li>
+                <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Planned Feature: Translate phrases</p></li>
+                <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Implemented with Python with popular ML libraries (Keras, Tensorflow, etc.)</p></li>
+              </ul>
+              <div class="flex-row card-link-row">
+                <a href="https://github.com/ubclaunchpad/mimic" target="_blank" class="btn">Github</a>
               </div>
-          </div>
-      </div> -->
-        
+            </div>
+        </div>
+    </div>
+
     </div>
   </div>
 
