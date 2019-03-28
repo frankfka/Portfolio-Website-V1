@@ -187,7 +187,6 @@ a:hover {
 /* Fourth Section */
 .card {
   margin: 1em;
-  width: 50%;
 }
 .card p a {
   font-size: 1em !important;
@@ -205,6 +204,9 @@ a:hover {
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .card {
+    width: 50%;
+  }
   .project-row {
     margin: auto 3em;
   }
