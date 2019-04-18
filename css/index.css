@@ -11,7 +11,7 @@ h2 {
 }
 p, h2, h5, a, .thin-text {
   font-weight: 300 !important;
-  font-size: 1.1em !important;
+  font-size: 1em !important;
 }
 a {
   color: #f57c00;
