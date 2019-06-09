@@ -101,14 +101,14 @@
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">Native&nbsp;Java</p></li>
                     <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">Python</p></li>
-                    <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">Android&nbsp;Java/XML</p></li>
+                    <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">Android&nbsp;Java/Kotlin</p></li>
                   </ul>
                 </div>
                 <div class="col">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">Swift</p></li>
                       <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">HTML/CSS</p></li>
-                      <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">Project&nbsp;Planning</p></li>
+                      <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">Google Cloud Platform/Firebase</p></li>
                     </ul>
                 </div>
               </div>
@@ -198,7 +198,7 @@
   <!-- PROJECTS SECTION -->
   <div id="projects" class="container-fluid contrast-background">
     <div class="container">
-      <h2 class="centered section-header">Current Projects</h2>
+      <h2 class="centered section-header">Projects</h2>
       <!-- FIRST PROJECTS ROW -->
       <div class="project-row d-flex flex-column flex-md-row">
 
@@ -216,6 +216,7 @@
               <div class="flex-row card-link-row">
                 <a href="https://itunes.apple.com/us/app/keepreceipt-receipt-tracker/id1449402433?mt=8" target="_blank" class="btn">iOS</a>
                 <a href="https://play.google.com/store/apps/details?id=com.jiafrank.keepreceipt" target="_blank" class="btn">Android</a>
+                <a class="btn" data-toggle="modal" href="#keepreceipt-detail">Details</a>
               </div>
             </div>
           </div>
@@ -234,6 +235,7 @@
                 <div class="flex-row card-link-row">
                   <a href="https://itunes.apple.com/us/app/betterplate-healthy-eating/id1447765100" target="_blank" class="btn">iOS</a>
                   <a href="https://play.google.com/store/apps/details?id=app.betterplate.betterplate" target="_blank" class="btn">Android</a>
+                  <a class="btn" data-toggle="modal" href="#betterplate-detail">Details</a>
                 </div>
               </div>
           </div>
@@ -255,6 +257,7 @@
             <div class="flex-row card-link-row">
               <a href="https://github.com/frankfka/CryptoDashboard" target="_blank" class="btn">Github</a>
               <a href="https://frankfka.github.io/CryptoDashboard" target="_blank" class="btn">App</a>
+              <a class="btn" data-toggle="modal" href="#cryptodash-detail">Details</a>
             </div>
           </div>
         </div>
@@ -271,6 +274,7 @@
               </ul>
               <div class="flex-row card-link-row">
                 <a href="https://github.com/ubclaunchpad/mimic" target="_blank" class="btn">Github</a>
+                <a class="btn" data-toggle="modal" href="#mimic-detail">Details</a>
               </div>
             </div>
         </div>
@@ -289,4 +293,108 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
+
+<!-- MODALS -->
+
+<!-- KeepReceipt -->
+<div class="modal fade" id="keepreceipt-detail" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">KeepReceipt</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p>
+            <span class="font-weight-bold">Key Technologies: </span>Android Java, Swift, Firebase & Cloud Sync
+          </p>
+          <p>
+          Having always tracked my personal finances, I had large folders of past receipts. I envisioned a service that would allow for quick & simple digitization of non-critical receipts (i.e. receipts that didn’t need to be in hard-copy form), so I decided to build KeepReceipt.
+          </p>
+          <p>
+          Having built Betterplate, I had a fair grasp of basic iOS and Android programming concepts. KeepReceipt allowed me to gain <span class="accent-text">further expertise and experience in mobile development</span>, but I also wanted to challenge myself. After building an MVP of the app, I decided to introduce a sync feature - users would <span class="accent-text">login via Google and enable sync of transaction details on Firebase Firestore.</span>       
+          </p>    
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Betterplate -->
+<div class="modal fade" id="betterplate-detail" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Betterplate</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>
+                <span class="font-weight-bold">Key Technologies: </span>Android Java, Swift, SQLite, Python
+            </p>
+            <p>
+            As a fitness enthusiast and stickler for healthy eating, I wanted to easily access nutritional information of restaurant menu items. However, I could not find an existing solution that integrated nutritional details of a variety of restaurants. I have always had an interest in developing mobile applications, so I decided to build this app myself.
+            </p>
+            <p>
+            Unfortunately, I had no experience nor knowledge in mobile application development. I decided to <span class="accent-text">self-enroll in a Udemy course for iOS development</span>. This project was not only an excellent introduction into the realm of mobile software, but also allowed me to experiment in <span class="accent-text">web crawling, data processing, and SQLite databases.</span>
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CryptoDash -->
+  <div class="modal fade" id="cryptodash-detail" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">CryptoDash</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <p>
+                  <span class="font-weight-bold">Key Technologies: </span>ReactJS, Python, Heroku
+              </p>
+              <p>
+              Cryptodash allowed me to learn the basics of <span class="accent-text">structuring React projects and creating components</span>, as well as the <span class="accent-text">fetching of data from online APIs</span> with authentication.
+              </p>
+              <p>
+              Having completed an introduction to React JS course on Lynda, I wanted to apply what I learned and build a webapp in React. I have always had an immense interest in personal finance and was intrigued by cryptocurrencies, making a cryptocurrency dashboard a perfect starter project into web development.   
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Mimic -->
+  <div class="modal fade" id="mimic-detail" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Mimic</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <p>
+                  <span class="font-weight-bold">Key Technologies: </span>Python
+              </p>
+              <p>
+              Wishing to collaborate on larger software projects, I joined UBC’s software development club, Launchpad. During my first term at Launchpad, I had the opportunity to develop my understanding of machine learning through developing Mimic. Although the majority of my team was new to machine learning, we were able to collaboratively create a service for ML text generation.
+              </p>
+              <p>
+              I was able to learn the basics of machine learning, such as cleaning datasets and different <span class="accent-text">ML models such as LSTM and Markov Chains</span>. Collaboration also meant that I was able to gather experience in <span class="accent-text">developing software projects as a team</span> (managing pull requests, reviewing code, etc.)
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
 </html>
