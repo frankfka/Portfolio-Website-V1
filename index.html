@@ -199,10 +199,32 @@
   <div id="projects" class="container-fluid contrast-background">
     <div class="container">
       <h2 class="centered section-header">Projects</h2>
-      <!-- FIRST PROJECTS ROW -->
+
+       <!-- FIRST PROJECTS ROW -->
+       <div class="project-row d-flex flex-column flex-md-row justify-content-center align-center">
+        <div class="card">
+          <!-- <h5 class="card-header">Featured</h5> -->
+          <img class="card-img-top img-fluid" src="img/clerc-logo.png" alt="Card image cap">
+          <div class="card-body">
+            <h3 class="card-title">Clerc</h3>
+            <p class="card-text">Clerc allows customers to checkout with their phone at participating retailers. This is an ongoing venture.</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Scan items & pay with your phone using credit, debit, or Apple Pay              </p></li>
+              <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Support for per-unit as well as weighed items</p></li>
+              <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Past transaction logs & email receipts</p></li>
+            </ul>
+            <div class="flex-row card-link-row">
+              <a href="https://paywithclerc.com/" target="_blank" class="btn">Website</a>
+              <a class="btn" data-toggle="modal" href="#clerc-detail">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECOND PROJECTS ROW -->
       <div class="project-row d-flex flex-column flex-md-row">
 
-          <div class="card">
+          <div class="card half-fill">
             <!-- <h5 class="card-header">Featured</h5> -->
             <img class="card-img-top img-fluid" src="img/keepreceipt-logo.png" alt="Card image cap">
             <div class="card-body">
@@ -221,7 +243,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card half-fill">
               <!-- <h5 class="card-header">Featured</h5> -->
               <img class="card-img-top img-fluid" src="img/betterplate-logo.png" alt="Card image cap">
               <div class="card-body">
@@ -241,10 +263,10 @@
           </div>
       </div>
 
-      <!-- SECOND ROW -->
+      <!-- THIRD ROW -->
       <div class="project-row d-flex flex-column flex-md-row">
 
-        <div class="card">
+        <div class="card half-fill">
           <img class="card-img-top img-fluid" src="img/cryptodash-logo.png" alt="Card image cap">
           <div class="card-body">
             <h3 class="card-title">CryptoDash</h3>
@@ -262,7 +284,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card half-fill">
             <img class="card-img-top img-fluid" src="img/mimic-logo.png" alt="Card image cap">
             <div class="card-body">
               <h3 class="card-title">Mimic</h3>
@@ -296,6 +318,37 @@
 
 
 <!-- MODALS -->
+
+<!-- Clerc -->
+<div class="modal fade" id="clerc-detail" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Clerc</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p>
+            <span class="font-weight-bold">Key Technologies: </span>Android Kotlin, Swift (iOS), Ruby (Backend), Cloud Computing (Firebase, Google Cloud Platform)
+          </p>
+          <p>
+          Clerc is a <span class="accent-text">checkout-as-a-service</span> platform that I built and launched with a fellow Engineering Physics student. We both saw a market opportunity for additional automation within the physical retail industry, and decided to built a solution for that market need.
+          </p>
+          <p>
+          I was responsible for building a full-stack system that would allow shoppers to scan and pay for items with their mobile phone. On the front-end, this involved <span class="accent-text">iOS and Android apps</span> that made various networking calls to external services as well as our own backend. I also built a <span class="accent-text">vendor dashboard in ReactJS</span> for stores to manage their products.
+          </p>  
+          <p>
+          <span class="accent-text">The backend is responsible for processing payments and coordinating transaction information</span>. The current backend is written in Ruby and hosted on Google App Engine. We use Firebase for data storage as well as user management and authentication. To allow payments, we integrated with Stripe.
+          </p>  
+          <p>
+          As we are processing live payments, we placed a heavy emphasis on cybersecurity - the details of which I won’t reveal as this project is ongoing. Creating an end-to-end system was a great learning opportunity in the construction of robust and secure software. 
+          </p>    
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- KeepReceipt -->
 <div class="modal fade" id="keepreceipt-detail" tabindex="-1" role="dialog" aria-hidden="true">
