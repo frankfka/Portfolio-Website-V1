@@ -5,8 +5,10 @@
 
   <meta charset="utf-8">
   <title>Frank Jia | UBC Engineering Physics Student</title>
-  <meta name="description" content="Welcome to my portfolio website! I'm an Engineering Physics student at the University of British Columbia and an incoming Full-Stack Software Intern at SAP. I love building mobile apps, researching equities, and committing to a healthy lifestyle. Let's connect!">
-  <meta name="keywords" content="Frank Jia,frank,jia,engineer,physics,frankfka,jiafrank,jiafrank98,Jia,vancouver,software,developer,mobile,ios,android,portfolio,github,linkedin">
+  <meta name="description"
+        content="Welcome to my portfolio website! I'm an Engineering Physics student at the University of British Columbia and an incoming Full-Stack Software Intern at SAP. I love building mobile apps, researching equities, and committing to a healthy lifestyle. Let's connect!">
+  <meta name="keywords"
+        content="Frank Jia,frank,jia,engineer,physics,frankfka,jiafrank,jiafrank98,Jia,vancouver,software,developer,mobile,ios,android,portfolio,github,linkedin">
   <meta name="author" content="Frank Jia">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,7 +16,11 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133684027-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', 'UA-133684027-1');
@@ -31,289 +37,490 @@
 
   <!-- Dependencies -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
   <link href="css/index.css" rel="stylesheet">
   <script src="js/index.js" type="module"></script>
 
 </head>
 <body data-spy="scroll" data-target="#nav-items" data-offset="50">
 
-    <nav class="navbar navbar-expand-md fixed-top navbar-light" id="nav-items">
+<nav class="navbar navbar-expand-md fixed-top navbar-light" id="nav-items">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsed-navbar" aria-controls="collapsed-navbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse justify-content-end centered" id="collapsed-navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item mx-md-1">
-              <a class="nav-link" href="#overview">Overview</a>
+  <button class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsed-navbar"
+          aria-controls="collapsed-navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end centered" id="collapsed-navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item mx-md-1">
+        <a class="nav-link" href="#overview">Overview</a>
+      </li>
+      <li class="nav-item mx-md-1">
+        <a class="nav-link" href="#experience">Experience</a>
+      </li>
+      <li class="nav-item mx-md-1">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+    </ul>
+    <a class="btn mx-md-3 my-2 my-md-0"
+       href="files/frank_jia_resume.pdf"
+       target="_blank"
+       id="resume-nav-button">Resume</a>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div id="header" class="container">
+    <h1 id="header-name">Frank Jia</h1>
+    <h2 class="text-muted"><span id="animated-text-header" class="animated-text accent-text"></span><span
+      class="cursor"></span></h2>
+    <div id="header-social" class="mt-1">
+      <div class="header-social-item d-inline">
+        <a href="mailto:jiafrank98@gmail.com"><img src="img/email.svg" class="header-social-icon"/>
+          <p class="text-muted d-inline">&nbsp;jiafrank98@gmail.com</p></a>
+      </div>
+      <div class="header-social-item d-inline">
+        <a href="tel:1-778-384-9871"><img src="img/phone.svg" class="header-social-icon"/>
+          <p class="text-muted d-inline">778-384-9871</p></a>
+      </div>
+      <div class="header-social-item d-inline">
+        <a href="https://www.linkedin.com/in/jiafrank/" target="_blank"><img src="img/linkedin.svg"
+                                                                             class="header-social-icon"/>
+          <p class="text-muted d-inline">&nbsp;jiafrank98</p></a>
+      </div>
+      <div class="header-social-item d-inline">
+        <a href="https://github.com/frankfka/"
+           target="_blank"
+           class="d-inline"><img src="img/github.svg" class="header-social-icon"/>
+          <p class="text-muted d-inline">&nbsp;frankfka</p></a>
+      </div>
+    </div>
+    <a class="btn mt-3" href="https://frankjia.typeform.com/to/tY4AYv" target="_blank">Let's
+      Connect.</a>
+  </div>
+</div>
+
+<div id="overview" class="container-fluid contrast-background">
+  <div class="container">
+
+    <h2 class="centered section-header" id="overview-header">Overview</h2>
+    <div class="row justify-content-center align-center">
+
+      <div class="col-lg-6 col-12 order-2 order-lg-1">
+        <p>
+          <span class="accent-text d-inline">Hello!</span> I'm Frank Jia, a mobile app developer,
+          problem solver, and fitness enthusiast. <br><br>
+          I am a fourth year <a href="http://www.engphys.ubc.ca/" target="_blank">Engineering
+          Physics</a> student at UBC, which is a blend of Software Engineering & Mechatronics.
+          <br><br>
+          Although I keep myself busy with school, I exercise on a daily basis and am committed to
+          maintaining my health with whole foods. <br><br>
+          I love learning new technologies and creating value through software. I have experience
+          with:
+        </p>
+        <div class="row">
+          <div class="col">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">
+                Backend development in Java/Kotlin/Golang/NodeJS</p></li>
+              <li class="list-group-item">
+                <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">
+                Machine learning in Python (Mainly NLP)</p></li>
+              <li class="list-group-item">
+                <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">
+                Mobile development in Kotlin/Swift</p></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">
+                Methodologies such as Redux/ReactiveX</p></li>
+              <li class="list-group-item">
+                <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">
+                Web development in React/Native HTML/CSS</p></li>
+              <li class="list-group-item">
+                <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">
+                Cloud infrastructure in AWS/GCP</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 offset-lg-1 col-12 order-1 order-lg-2 d-flex align-items-center justify-content-center">
+        <img src="img/personal-image.png" id="personal-image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="experience-heading" class="section-heading"></div>
+
+<div id="experience" class="container-fluid">
+  <div class="container">
+    <h2 class="centered section-header">Experience</h2>
+    <div id="experience-tabs-container">
+
+      <div class="nav flex-column flex-md-row justify-content-center"
+           id="experience-tabs"
+           role="tablist"
+           aria-orientation="vertical">
+        <a class="nav-link active flex-fill centered"
+           id="experience-tabs-sap-tab"
+           data-toggle="pill"
+           href="#experience-tabs-sap"
+           role="tab"
+           aria-controls="experience-tabs-sap"
+           aria-selected="true">SAP Concur</a>
+        <a class="nav-link flex-fill centered"
+           id="experience-tabs-grow-tab"
+           data-toggle="pill"
+           href="#experience-tabs-grow"
+           role="tab"
+           aria-controls="experience-tabs-grow"
+           aria-selected="false">Grow</a>
+        <a class="nav-link flex-fill centered"
+           id="experience-tabs-workbench-tab"
+           data-toggle="pill"
+           href="#experience-tabs-workbench"
+           role="tab"
+           aria-controls="experience-tabs-workbench"
+           aria-selected="false">3D&nbsp;Workbench</a>
+        <a class="nav-link flex-fill centered"
+           id="experience-tabs-shop-tab"
+           data-toggle="pill"
+           href="#experience-tabs-shop"
+           role="tab"
+           aria-controls="experience-tabs-shop"
+           aria-selected="false">ShopandShout</a>
+        <a class="nav-link flex-fill centered"
+           id="experience-tabs-v2-tab"
+           data-toggle="pill"
+           href="#experience-tabs-v2"
+           role="tab"
+           aria-controls="experience-tabs-v2"
+           aria-selected="false">V2&nbsp;Games</a>
+      </div>
+
+
+      <div class="tab-content" id="experience-tabs-content">
+        <div class="tab-pane fade show active"
+             id="experience-tabs-sap"
+             role="tabpanel"
+             aria-labelledby="experience-tabs-sap-tab">
+
+          <h3>Software Engineer Intern <a href="https://www.concur.ca/"
+                                          target="_blank">@SAP Concur</a></h3>
+
+          <p class="text-muted">Apr 2019 - Current</p>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">
+              <span class="accent-text d-inline">Led</span> and <span class="accent-text d-inline">accelerated</span>
+              the completion of mobile
+              travel booking workflows in both iOS (Swift) and Android (Kotlin)</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">
+              Gathered experience coordinating with large distributed teams to achieve optimistic
+              deadlines</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Helped to develop
+              <span class="accent-text d-inline">backend functionality</span> in Typescript,
+              GraphQL, and Golang</p></li>
+          </ul>
+
+        </div>
+        <div class="tab-pane fade"
+             id="experience-tabs-grow"
+             role="tabpanel"
+             aria-labelledby="experience-tabs-grow-tab">
+
+          <h3>Junior Software Engineer <a href="https://poweredbygrow.com/"
+                                          target="_blank">@Grow</a></h3>
+
+          <p class="text-muted">Jan 2018 - Apr 2018</p>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Optimized the
+              existing code base and introduced new product features to enhance the efficiency and
+              value proposition of our core product</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Developed expertise
+              in Java for enterprise applications with over <span class="accent-text d-inline">1000+ individual contributions</span>
+              and 75+ merge requests</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Solely responsible
+              for developing and integrating ID verification functionality, such as OCR and barcode
+              scanning, that <span class="accent-text d-inline">reduced fraud rates</span> in online
+              banking applications</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Became familiar
+              with industry tools, such as: <span class="accent-text d-inline">Spring/Guice, Maven, Git, and Google Cloud Platform</span>
+            </p></li>
+          </ul>
+
+        </div>
+        <div class="tab-pane fade"
+             id="experience-tabs-workbench"
+             role="tabpanel"
+             aria-labelledby="experience-tabs-workbench-tab">
+
+          <h3>Owner & Operator <span class="accent-text thin-text">@3D&nbsp;Workbench</span></h3>
+
+          <p class="text-muted">Jan 2016 - Mar 2018</p>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Started & scaled an
+              Amazon and eBay eCommerce business specializing in 3D printers and accessories</p>
             </li>
-            <li class="nav-item mx-md-1">
-              <a class="nav-link" href="#experience">Experience</a>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Responsible for all
+              facets of business operation, including customer service, transportation logistics,
+              B2B communication, and marketing</li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Generated over
+              <span class="accent-text">$300,000</span> in total sales during 3D Workbench's 2 years
+              of operation</li>
+          </ul>
+
+        </div>
+        <div class="tab-pane fade"
+             id="experience-tabs-shop"
+             role="tabpanel"
+             aria-labelledby="experience-tabs-shop-tab">
+
+          <h3>Business Development/Sales Intern <a href="https://shopandshout.com/" target="_blank">@ShopandShout</a>
+          </h3>
+
+          <p class="text-muted">May 2017 - Sept 2017</p>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Spearheaded B2B
+              sales and assisted with business development for the influencer marketing startup</p>
             </li>
-            <li class="nav-item mx-md-1">
-              <a class="nav-link" href="#projects">Projects</a>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Identified and
+              approached <span class="accent-text">300+</span> local brands and businesses, helping
+              to <span class="accent-text">double the number of active customers</span></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Maintained and
+              provided support for the core technology platform</li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Scheduled and took
+              responsibility of in-person client and sales meetings to increase customer
+              satisfaction and generate additional revenue</li>
+          </ul>
+
+        </div>
+        <div class="tab-pane fade"
+             id="experience-tabs-v2"
+             role="tabpanel"
+             aria-labelledby="experience-tabs-v2-tab">
+
+          <h3>Mobile App Publishing Intern <a href="https://www.v2g.io/" target="_blank">@V2&nbsp;Games</a>
+          </h3>
+
+          <p class="text-muted">Jun 2016 - Nov 2016</p>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Solely responsible
+              for creating an application publishing pipeline for both iOS and Android platforms</p>
+            </li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Collaborated with
+              external agencies and internal teams to help publish <span class="accent-text">Beast Brawlers & Fantasy Football Coach</span>
             </li>
           </ul>
-          <a class="btn mx-md-3 my-2 my-md-0" href="files/frank_jia_resume.pdf" target="_blank" id="resume-nav-button">Resume</a>
-        </div>
-      </nav>
 
-  <div class="container-fluid">
-    <div id="header" class="container">
-      <h1 id="header-name">Frank Jia</h1> 
-      <h2 class="text-muted"><span id="animated-text-header" class="animated-text accent-text"></span><span class="cursor"></span></h2>
-      <div id="header-social" class="mt-1">
-        <div class="header-social-item d-inline">
-          <a href="mailto:jiafrank98@gmail.com"><img src="img/email.svg" class="header-social-icon"/><p class="text-muted d-inline">&nbsp;jiafrank98@gmail.com</p></a>
-        </div>
-        <div class="header-social-item d-inline">
-          <a href="tel:1-778-384-9871"><img src="img/phone.svg" class="header-social-icon"/>
-            <p class="text-muted d-inline">778-384-9871</p></a>
-        </div>
-        <div class="header-social-item d-inline">
-          <a href="https://www.linkedin.com/in/jiafrank/" target="_blank"><img src="img/linkedin.svg" class="header-social-icon"/><p class="text-muted d-inline">&nbsp;jiafrank98</p></a>
-        </div>
-        <div class="header-social-item d-inline">
-          <a href="https://github.com/frankfka/" target="_blank" class="d-inline"><img src="img/github.svg" class="header-social-icon"/><p class="text-muted d-inline">&nbsp;frankfka</p></a>
         </div>
       </div>
-      <a class="btn mt-3" href="https://frankjia.typeform.com/to/tY4AYv" target="_blank">Let's Connect.</a>
+
     </div>
   </div>
+</div>
 
-  <div id="overview" class="container-fluid contrast-background">
-    <div class="container">
+<!-- PROJECTS SECTION -->
+<div id="projects" class="container-fluid contrast-background">
+  <div class="container">
+    <h2 class="centered section-header">Projects</h2>
 
-      <h2 class="centered section-header" id="overview-header">Overview</h2>
-      <div class="row justify-content-center align-center">
-        
-          <div class="col-lg-6 col-12 order-2 order-lg-1">
-            <p>
-                <span class="accent-text d-inline">Hello!</span> I'm Frank Jia, a mobile app developer, problem solver, and fitness enthusiast. <br><br>
-                I am currently a 3rd year <a href="http://www.engphys.ubc.ca/" target="_blank">Engineering Physics</a> student at UBC, which is a blend of Software Engineering & Mechatronics. Outside of my core studies, I am planning to pursue a minor in Business. I believe that my technical expertise, paired with a business intuition, will allow me to create meaningful value in whatever I do. <br><br>
-                Although I keep myself busy with school, I exercise on a daily basis and am committed to maintaining my health with whole foods. I am extremely interested in creating software that provides value, and have been dedicating my free time to learning new technologies and developing my existing skills.<br><br>
-                My core competencies are:
-            </p>
-            <div class="row">
-                <div class="col">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">Native&nbsp;Java</p></li>
-                    <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">Python</p></li>
-                    <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">Android&nbsp;Java/Kotlin</p></li>
-                  </ul>
-                </div>
-                <div class="col">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">Swift</p></li>
-                      <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">HTML/CSS</p></li>
-                      <li class="list-group-item"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline bolded-text">Google Cloud Platform/Firebase</p></li>
-                    </ul>
-                </div>
-              </div>
-          </div>
-          <div class="col-lg-5 offset-lg-1 col-12 order-1 order-lg-2 d-flex align-items-center justify-content-center">
-            <img src="img/personal-image.png" id="personal-image" class="img-fluid">
+    <!-- FIRST PROJECTS ROW -->
+    <div class="project-row d-flex flex-column flex-md-row justify-content-center align-center">
+      <div class="card">
+        <!-- <h5 class="card-header">Featured</h5> -->
+        <img class="card-img-top img-fluid" src="img/clerc-logo.png" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Clerc</h3>
+          <p class="card-text">Clerc allows customers to checkout with their phone at participating
+            retailers. This is an ongoing venture.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Scan items & pay
+              with your phone using credit, debit, or Apple Pay </p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Support for
+              per-unit as well as weighed items</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Past transaction
+              logs & email receipts</p></li>
+          </ul>
+          <div class="flex-row card-link-row">
+            <a href="https://paywithclerc.com/" target="_blank" class="btn">Website</a>
+            <a class="btn" data-toggle="modal" href="#clerc-detail">Details</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-    
-  <div id="experience-heading" class="section-heading"></div>
 
-  <div id="experience" class="container-fluid">
-    <div class="container">
-        <h2 class="centered section-header">Experience</h2>
-        <div id="experience-tabs-container">
+    <!-- SECOND PROJECTS ROW -->
+    <div class="project-row d-flex flex-column flex-md-row">
 
-            <div class="nav flex-column flex-md-row justify-content-center" id="experience-tabs" role="tablist" aria-orientation="vertical">
-              <a class="nav-link active flex-fill centered" id="experience-tabs-grow-tab" data-toggle="pill" href="#experience-tabs-grow" role="tab" aria-controls="experience-tabs-grow" aria-selected="true">Grow</a>
-              <a class="nav-link flex-fill centered" id="experience-tabs-workbench-tab" data-toggle="pill" href="#experience-tabs-workbench" role="tab" aria-controls="experience-tabs-workbench" aria-selected="false">3D&nbsp;Workbench</a>
-              <a class="nav-link flex-fill centered" id="experience-tabs-shop-tab" data-toggle="pill" href="#experience-tabs-shop" role="tab" aria-controls="experience-tabs-shop" aria-selected="false">ShopandShout</a>
-              <a class="nav-link flex-fill centered" id="experience-tabs-v2-tab" data-toggle="pill" href="#experience-tabs-v2" role="tab" aria-controls="experience-tabs-v2" aria-selected="false">V2&nbsp;Games</a>
-            </div>
-    
-            <div class="tab-content" id="experience-tabs-content">
-              <div class="tab-pane fade show active" id="experience-tabs-grow" role="tabpanel" aria-labelledby="experience-tabs-grow-tab">
-
-                <h3>Junior Software Engineer <a href="https://poweredbygrow.com/" target="_blank">@Grow</a></h3>
-
-                <p class="text-muted">Jan 2018 - Apr 2018</p>
-
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Optimized the existing code base and introduced new product features to enhance the efficiency and value proposition of our core product</p></li>
-                  <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Developed expertise in Java for enterprise applications with over <span class="accent-text d-inline">1000+ individual contributions</span> and 75+ merge requests</p></li>
-                  <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Solely responsible for developing and integrating ID verification functionality, such as OCR and barcode scanning, that <span class="accent-text d-inline">reduced fraud rates</span> in online banking applications</p></li>
-                  <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Became familiar with industry tools, such as: <span class="accent-text d-inline">Spring/Guice, Maven, Git, and Google Cloud Platform</span></p></li>
-                </ul>
-
-              </div>
-              <div class="tab-pane fade" id="experience-tabs-workbench" role="tabpanel" aria-labelledby="experience-tabs-workbench-tab">
-
-                  <h3>Owner & Operator <span class="accent-text thin-text">@3D&nbsp;Workbench</span></h3>
-
-                  <p class="text-muted">Jan 2016 - Mar 2018</p>
-  
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Started & scaled an Amazon and eBay eCommerce business specializing in 3D printers and accessories</p></li>
-                    <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Responsible for all facets of business operation, including customer service, transportation logistics, B2B communication, and marketing</li>
-                    <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Generated over <span class="accent-text">$300,000</span> in total sales during 3D Workbench's 2 years of operation</li>
-                  </ul>
-
-              </div>
-              <div class="tab-pane fade" id="experience-tabs-shop" role="tabpanel" aria-labelledby="experience-tabs-shop-tab">
-
-                  <h3>Business Development/Sales Intern <a href="https://shopandshout.com/" target="_blank">@ShopandShout</a></h3>
-
-                  <p class="text-muted">May 2017 - Sept 2017</p>
-  
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Spearheaded B2B sales and assisted with business development for the influencer marketing startup</p></li>
-                    <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Identified and approached <span class="accent-text">300+</span> local brands and businesses, helping to <span class="accent-text">double the number of active customers</span></li>
-                    <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Maintained and provided support for the core technology platform</li>
-                    <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Scheduled and took responsibility of in-person client and sales meetings to increase customer satisfaction and generate additional revenue</li>
-                  </ul>
-
-              </div>
-              <div class="tab-pane fade" id="experience-tabs-v2" role="tabpanel" aria-labelledby="experience-tabs-v2-tab">
-
-                  <h3>Mobile App Publishing Intern <a href="https://www.v2g.io/" target="_blank">@V2&nbsp;Games</a></h3>
-
-                  <p class="text-muted">Jun 2016 - Nov 2016</p>
-  
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Solely responsible for creating an application publishing pipeline for both iOS and Android platforms</p></li>
-                    <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Collaborated with external agencies and internal teams to help publish <span class="accent-text">Beast Brawlers & Fantasy Football Coach</span></li>
-                  </ul>
-
-              </div>
-            </div>
-
-        </div>
-    </div>
-  </div>
-
-  <!-- PROJECTS SECTION -->
-  <div id="projects" class="container-fluid contrast-background">
-    <div class="container">
-      <h2 class="centered section-header">Projects</h2>
-
-       <!-- FIRST PROJECTS ROW -->
-       <div class="project-row d-flex flex-column flex-md-row justify-content-center align-center">
-        <div class="card">
-          <!-- <h5 class="card-header">Featured</h5> -->
-          <img class="card-img-top img-fluid" src="img/clerc-logo.png" alt="Card image cap">
-          <div class="card-body">
-            <h3 class="card-title">Clerc</h3>
-            <p class="card-text">Clerc allows customers to checkout with their phone at participating retailers. This is an ongoing venture.</p>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Scan items & pay with your phone using credit, debit, or Apple Pay              </p></li>
-              <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Support for per-unit as well as weighed items</p></li>
-              <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Past transaction logs & email receipts</p></li>
-            </ul>
-            <div class="flex-row card-link-row">
-              <a href="https://paywithclerc.com/" target="_blank" class="btn">Website</a>
-              <a class="btn" data-toggle="modal" href="#clerc-detail">Details</a>
-            </div>
+      <div class="card half-fill">
+        <!-- <h5 class="card-header">Featured</h5> -->
+        <img class="card-img-top img-fluid" src="img/keepreceipt-logo.png" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">KeepReceipt</h3>
+          <p class="card-text">An Android/iOS application to easily digitalize and keep track of
+            your receipts</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Easy digitization
+              and categorization of expenses</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Advanced search for
+              receipt filtering</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Planned Feature:
+              OCR of receipt information</p></li>
+          </ul>
+          <div class="flex-row card-link-row">
+            <a href="https://itunes.apple.com/us/app/keepreceipt-receipt-tracker/id1449402433?mt=8"
+               target="_blank"
+               class="btn">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.jiafrank.keepreceipt"
+               target="_blank"
+               class="btn">Android</a>
+            <a class="btn" data-toggle="modal" href="#keepreceipt-detail">Details</a>
           </div>
         </div>
       </div>
 
-      <!-- SECOND PROJECTS ROW -->
-      <div class="project-row d-flex flex-column flex-md-row">
-
-          <div class="card half-fill">
-            <!-- <h5 class="card-header">Featured</h5> -->
-            <img class="card-img-top img-fluid" src="img/keepreceipt-logo.png" alt="Card image cap">
-            <div class="card-body">
-              <h3 class="card-title">KeepReceipt</h3>
-              <p class="card-text">An Android/iOS application to easily digitalize and keep track of your receipts</p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Easy digitization and categorization of expenses</p></li>
-                <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Advanced search for receipt filtering</p></li>
-                <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Planned Feature: OCR of receipt information</p></li>
-              </ul>
-              <div class="flex-row card-link-row">
-                <a href="https://itunes.apple.com/us/app/keepreceipt-receipt-tracker/id1449402433?mt=8" target="_blank" class="btn">iOS</a>
-                <a href="https://play.google.com/store/apps/details?id=com.jiafrank.keepreceipt" target="_blank" class="btn">Android</a>
-                <a class="btn" data-toggle="modal" href="#keepreceipt-detail">Details</a>
-              </div>
-            </div>
+      <div class="card half-fill">
+        <!-- <h5 class="card-header">Featured</h5> -->
+        <img class="card-img-top img-fluid" src="img/betterplate-logo.png" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Betterplate</h3>
+          <p class="card-text">An Android/iOS application to make healthy eating more accessible
+            when dining out</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Menu items from
+              over 50 fast food restaurants</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Easily add items to
+              your meal & see the nutrition breakdown</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Filter foods by
+              macronutrients or dietary needs</p></li>
+          </ul>
+          <div class="flex-row card-link-row">
+            <a href="https://itunes.apple.com/us/app/betterplate-healthy-eating/id1447765100"
+               target="_blank"
+               class="btn">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=app.betterplate.betterplate"
+               target="_blank"
+               class="btn">Android</a>
+            <a class="btn" data-toggle="modal" href="#betterplate-detail">Details</a>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="card half-fill">
-              <!-- <h5 class="card-header">Featured</h5> -->
-              <img class="card-img-top img-fluid" src="img/betterplate-logo.png" alt="Card image cap">
-              <div class="card-body">
-                <h3 class="card-title">Betterplate</h3>
-                <p class="card-text">An Android/iOS application to make healthy eating more accessible when dining out</p>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Menu items from over 50 fast food restaurants</p></li>
-                  <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Easily add items to your meal & see the nutrition breakdown</p></li>
-                  <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Filter foods by macronutrients or dietary needs</p></li>
-                </ul>
-                <div class="flex-row card-link-row">
-                  <a href="https://itunes.apple.com/us/app/betterplate-healthy-eating/id1447765100" target="_blank" class="btn">iOS</a>
-                  <a href="https://play.google.com/store/apps/details?id=app.betterplate.betterplate" target="_blank" class="btn">Android</a>
-                  <a class="btn" data-toggle="modal" href="#betterplate-detail">Details</a>
-                </div>
-              </div>
+    <!-- THIRD ROW -->
+    <div class="project-row d-flex flex-column flex-md-row">
+
+      <div class="card half-fill">
+        <img class="card-img-top img-fluid" src="img/cryptodash-logo.png" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">CryptoDash</h3>
+          <p class="card-text">A ReactJS + Python Webapp to Monitor Cryptocurrencies</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">See top movers and
+              the latest news</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Keep track of your
+              portfolio balances</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">ReactJS frontend
+              with Heroku-hosted Python Flask backend</p></li>
+          </ul>
+          <div class="flex-row card-link-row">
+            <a href="https://github.com/frankfka/CryptoDashboard"
+               target="_blank"
+               class="btn">Github</a>
+            <a href="https://frankfka.github.io/CryptoDashboard" target="_blank" class="btn">App</a>
+            <a class="btn" data-toggle="modal" href="#cryptodash-detail">Details</a>
           </div>
+        </div>
       </div>
 
-      <!-- THIRD ROW -->
-      <div class="project-row d-flex flex-column flex-md-row">
-
-        <div class="card half-fill">
-          <img class="card-img-top img-fluid" src="img/cryptodash-logo.png" alt="Card image cap">
-          <div class="card-body">
-            <h3 class="card-title">CryptoDash</h3>
-            <p class="card-text">A ReactJS + Python Webapp to Monitor Cryptocurrencies</p>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">See top movers and the latest news</p></li>
-              <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Keep track of your portfolio balances</p></li>
-              <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">ReactJS frontend with Heroku-hosted Python Flask backend</p></li>
-            </ul>
-            <div class="flex-row card-link-row">
-              <a href="https://github.com/frankfka/CryptoDashboard" target="_blank" class="btn">Github</a>
-              <a href="https://frankfka.github.io/CryptoDashboard" target="_blank" class="btn">App</a>
-              <a class="btn" data-toggle="modal" href="#cryptodash-detail">Details</a>
-            </div>
+      <div class="card half-fill">
+        <img class="card-img-top img-fluid" src="img/mimic-logo.png" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Mimic</h3>
+          <p class="card-text">Machine learning for text generation, created with
+            <a href="https://www.ubclaunchpad.com/" target="_blank">UBC Launchpad</a></p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Generate output
+              text similar to input dataset</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Planned Feature:
+              Translate phrases</p></li>
+            <li class="list-group-item flex-fill">
+              <div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Implemented with
+              Python with popular ML libraries (Keras, Tensorflow, etc.)</p></li>
+          </ul>
+          <div class="flex-row card-link-row">
+            <a href="https://github.com/ubclaunchpad/mimic" target="_blank" class="btn">Github</a>
+            <a class="btn" data-toggle="modal" href="#mimic-detail">Details</a>
           </div>
         </div>
-
-        <div class="card half-fill">
-            <img class="card-img-top img-fluid" src="img/mimic-logo.png" alt="Card image cap">
-            <div class="card-body">
-              <h3 class="card-title">Mimic</h3>
-              <p class="card-text">Machine learning for text generation, created with <a href="https://www.ubclaunchpad.com/" target="_blank">UBC Launchpad</a></p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Generate output text similar to input dataset</p></li>
-                <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Planned Feature: Translate phrases</p></li>
-                <li class="list-group-item flex-fill"><div class="accent-text d-inline">></div>&nbsp;<p class="d-inline">Implemented with Python with popular ML libraries (Keras, Tensorflow, etc.)</p></li>
-              </ul>
-              <div class="flex-row card-link-row">
-                <a href="https://github.com/ubclaunchpad/mimic" target="_blank" class="btn">Github</a>
-                <a class="btn" data-toggle="modal" href="#mimic-detail">Details</a>
-              </div>
-            </div>
-        </div>
+      </div>
     </div>
 
-    </div>
   </div>
+</div>
 
-  <footer>
-    <p class="centered py-3 my-0">Designed & Created by Frank Jia</p>
-  </footer>
-  <script
-			  src="https://code.jquery.com/jquery-3.3.1.min.js"
-			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+<footer>
+  <p class="centered py-3 my-0">Designed & Created by Frank Jia</p>
+</footer>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 
@@ -330,21 +537,43 @@
         </button>
       </div>
       <div class="modal-body">
-          <p>
-            <span class="font-weight-bold">Key Technologies: </span>Android Kotlin, Swift (iOS), Ruby (Backend), Cloud Computing (Firebase, Google Cloud Platform)
-          </p>
-          <p>
-          Clerc is a <span class="accent-text">checkout-as-a-service</span> platform that I built and launched with a fellow Engineering Physics student. We both saw a market opportunity for additional automation within the physical retail industry, and decided to built a solution for that market need.
-          </p>
-          <p>
-          I was responsible for building a full-stack system that would allow shoppers to scan and pay for items with their mobile phone. On the front-end, this involved <span class="accent-text">iOS and Android apps</span> that made various networking calls to external services as well as our own backend. I also built a <span class="accent-text">vendor dashboard in ReactJS</span> for stores to manage their products.
-          </p>  
-          <p>
-          <span class="accent-text">The backend is responsible for processing payments and coordinating transaction information</span>. The current backend is written in Ruby and hosted on Google App Engine. We use Firebase for data storage as well as user management and authentication. To allow payments, we integrated with Stripe.
-          </p>  
-          <p>
-          As we are processing live payments, we placed a heavy emphasis on cybersecurity - the details of which I won’t reveal as this project is ongoing. Creating an end-to-end system was a great learning opportunity in the construction of robust and secure software. 
-          </p>    
+        <p>
+          <span class="font-weight-bold">Key Technologies: </span>Android Kotlin, Swift (iOS), Ruby
+          (Backend), Cloud Computing (Firebase, Google Cloud Platform)
+        </p>
+        <p>
+          Clerc is a <span class="accent-text">checkout-as-a-service</span> platform that I built
+          and launched with a fellow Engineering Physics student.
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/6UCnzB2EgSE"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <p>
+          I was responsible for building a full-stack system that would allow shoppers to scan and
+          pay for items with their mobile phone. On the front-end, this involved
+          <span class="accent-text">iOS and Android apps</span> that made API calls
+          to external services as well as our own backend. I also built a <span class="accent-text">vendor dashboard in ReactJS</span>
+          for stores to manage their products.
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/JkFDwkQ5GbA"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <p>
+          <span class="accent-text">The backend is responsible for processing payments and coordinating transaction information</span>.
+          The backend was written in Ruby and hosted on Google App Engine. We used Firebase
+          for data storage as well as user management and authentication. To allow payments, we
+          integrated with Stripe.
+        </p>
       </div>
     </div>
   </div>
@@ -361,20 +590,32 @@
         </button>
       </div>
       <div class="modal-body">
-          <p>
-            <span class="font-weight-bold">Key Technologies: </span>Android Java, Swift, Firebase & Cloud Sync
-          </p>
-          <p>
-          Having always tracked my personal finances, I had large folders of past receipts. I envisioned a service that would allow for quick & simple digitization of non-critical receipts (i.e. receipts that didn’t need to be in hard-copy form), so I decided to build KeepReceipt.
-          </p>
-          <br>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/08w6IOCBr0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <br>
-          <p>
-          Having built Betterplate, I had a fair grasp of basic iOS and Android programming concepts. KeepReceipt allowed me to gain <span class="accent-text">further expertise and experience in mobile development</span>, but I also wanted to challenge myself. After building an MVP of the app, I decided to introduce a sync feature - users would <span class="accent-text">login via Google and enable sync of transaction details on Firebase Firestore.</span>       
-          </p>    
+        <p>
+          <span class="font-weight-bold">Key Technologies: </span>Android Java, Swift, Firebase &
+          Cloud Sync
+        </p>
+        <p>
+          Having always tracked my personal finances, I had large folders of past receipts. I
+          envisioned a service that would allow for quick & simple digitization of non-critical
+          receipts (i.e. receipts that didn’t need to be in hard-copy form), so I decided to build
+          KeepReceipt.
+        </p>
+        <br>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/08w6IOCBr0c"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <br>
+        <p>
+          Having built Betterplate, I had a fair grasp of basic iOS and Android programming
+          concepts. KeepReceipt allowed me to gain <span class="accent-text">further expertise and experience in mobile development</span>,
+          but I also wanted to challenge myself. After building an MVP of the app, I decided to
+          introduce a sync feature - users would <span class="accent-text">login via Google and enable sync of transaction details on Firebase Firestore.</span>
+        </p>
       </div>
     </div>
   </div>
@@ -382,87 +623,118 @@
 
 <!-- Betterplate -->
 <div class="modal fade" id="betterplate-detail" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title">Betterplate</h2>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Betterplate</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <span class="font-weight-bold">Key Technologies: </span>Android Java, Swift, SQLite,
+          Python
+        </p>
+        <p>
+          As a fitness enthusiast and stickler for healthy eating, I wanted to easily access
+          nutritional information of restaurant menu items. However, I could not find an existing
+          solution that integrated nutritional details of a variety of restaurants. I have always
+          had an interest in developing mobile applications, so I decided to build this app myself.
+        </p>
+        <br>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/GOXGw07Vfe4"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
         </div>
-        <div class="modal-body">
-            <p>
-                <span class="font-weight-bold">Key Technologies: </span>Android Java, Swift, SQLite, Python
-            </p>
-            <p>
-            As a fitness enthusiast and stickler for healthy eating, I wanted to easily access nutritional information of restaurant menu items. However, I could not find an existing solution that integrated nutritional details of a variety of restaurants. I have always had an interest in developing mobile applications, so I decided to build this app myself.
-            </p>
-            <br>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/GOXGw07Vfe4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <br>
-            <p>
-            Unfortunately, I had no experience nor knowledge in mobile application development. I decided to <span class="accent-text">self-enroll in a Udemy course for iOS development</span>. This project was not only an excellent introduction into the realm of mobile software, but also allowed me to experiment in <span class="accent-text">web crawling, data processing, and SQLite databases.</span>
-            </p>
-        </div>
+        <br>
+        <p>
+          Unfortunately, I had no experience nor knowledge in mobile application development. I
+          decided to
+          <span class="accent-text">self-enroll in a Udemy course for iOS development</span>. This
+          project was not only an excellent introduction into the realm of mobile software, but also
+          allowed me to experiment in <span class="accent-text">web crawling, data processing, and SQLite databases.</span>
+        </p>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- CryptoDash -->
-  <div class="modal fade" id="cryptodash-detail" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title">CryptoDash</h2>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <p>
-                  <span class="font-weight-bold">Key Technologies: </span>ReactJS, Python, Heroku
-              </p>
-              <p>
-              Cryptodash allowed me to learn the basics of <span class="accent-text">structuring React projects and creating components</span>, as well as the <span class="accent-text">fetching of data from online APIs</span> with authentication.
-              </p>
-              <br>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZZ9DOwRV93w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <br>
-              <p>
-              Having completed an introduction to React JS course on Lynda, I wanted to apply what I learned and build a webapp in React. I have always had an immense interest in personal finance and was intrigued by cryptocurrencies, making a cryptocurrency dashboard a perfect starter project into web development.   
-              </p>
-          </div>
+<!-- CryptoDash -->
+<div class="modal fade" id="cryptodash-detail" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">CryptoDash</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <span class="font-weight-bold">Key Technologies: </span>ReactJS, Python, Heroku
+        </p>
+        <p>
+          Cryptodash allowed me to learn the basics of <span class="accent-text">structuring React projects and creating components</span>,
+          as well as the <span class="accent-text">fetching of data from online APIs</span> with
+          authentication.
+        </p>
+        <br>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/ZZ9DOwRV93w"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
         </div>
+        <br>
+        <p>
+          Having completed an introduction to React JS course on Lynda, I wanted to apply what I
+          learned and build a webapp in React. I have always had an immense interest in personal
+          finance and was intrigued by cryptocurrencies, making a cryptocurrency dashboard a perfect
+          starter project into web development.
+        </p>
       </div>
     </div>
+  </div>
+</div>
 
-  <!-- Mimic -->
-  <div class="modal fade" id="mimic-detail" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title">Mimic</h2>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <p>
-                  <span class="font-weight-bold">Key Technologies: </span>Python
-              </p>
-              <p>
-              Wishing to collaborate on larger software projects, I joined UBC’s software development club, Launchpad. During my first term at Launchpad, I had the opportunity to develop my understanding of machine learning through developing Mimic. Although the majority of my team was new to machine learning, we were able to collaboratively create a service for ML text generation.
-              </p>
-              <p>
-              I was able to learn the basics of machine learning, such as cleaning datasets and different <span class="accent-text">ML models such as LSTM and Markov Chains</span>. Collaboration also meant that I was able to gather experience in <span class="accent-text">developing software projects as a team</span> (managing pull requests, reviewing code, etc.)
-              </p>
-          </div>
-        </div>
+<!-- Mimic -->
+<div class="modal fade" id="mimic-detail" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Mimic</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <span class="font-weight-bold">Key Technologies: </span>Python
+        </p>
+        <p>
+          Wishing to collaborate on larger software projects, I joined UBC’s software development
+          club, Launchpad. During my first term at Launchpad, I had the opportunity to develop my
+          understanding of machine learning through developing Mimic. Although the majority of my
+          team was new to machine learning, we were able to collaboratively create a service for ML
+          text generation.
+        </p>
+        <p>
+          I was able to learn the basics of machine learning, such as cleaning datasets and
+          different <span class="accent-text">ML models such as LSTM and Markov Chains</span>.
+          Collaboration also meant that I was able to gather experience in
+          <span class="accent-text">developing software projects as a team</span> (managing pull
+          requests, reviewing code, etc.)
+        </p>
       </div>
     </div>
+  </div>
+</div>
 
 </html>
